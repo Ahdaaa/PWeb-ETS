@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Coursify News</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./src/bootstrap-5.0.2-dist/css/bootstrap.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./src/style.css'>
+    
+</head>
+<body>
+    <div class="container-main">
+        <!--Navigation Bar-->
+        <div id="nav" class="d-flex align-items-end justify-content-center position-fixed fixed-top" style="z-index: 2;">
+            <nav class="d-flex justify-content-center align-items-center gap-2">
+                <div style="background-color: white; border-radius: 50%;">
+                    <img src="./src/images/spotify.png" class="img-fluid icon ">
+                </div>
+                <h5 class="mt-1">Newsify</h5>
+            </nav>
+        </div>
+
+        <!--Headline-->
+        <div id="carousel" class="carousel slide" data-interval="false">
+
+            <!--Control Arrows-->
+            <div class="carousel-controls">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel" data-slide-to="0" style="background-image: url(./src/images/headline-1.jpg);"></li>
+                    <li data-target="#carousel" data-slide-to="1" style="background-image: url(./src/images/headline-2.webp);"></li>
+                    <li data-target="#carousel" data-slide-to="2" style="background-image: url(./src/images/cs2.jpg);"></li>
+                </ol> 
+
+                <a class="carousel-control-prev" role="button" data-slide="prev" href="#carousel">
+                    <img src="./src/images/left-arrow.svg" alt="Previous" style="width: 30px;">
+                </a>
+
+                <a class="carousel-control-next" role="button" data-slide="next" href="#carousel">
+                    <img src="./src/images/right-arrow.svg" alt="Next" style="width: 30px;">
+                </a>
+                
+            </div>
+
+            <!--Contents-->
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="background-image: url(./src/images/headline-1.jpg);">
+                    <div class="container text-center flex-column transition">
+                        <h1>Jadwal Lengkap Prediksi Datangnya Hujan di Jakarta</h1>
+                        <h5>CNN Indonesia</h5>
+                    </div>
+                </div>
+
+                <div class="carousel-item " style="background-image: url(./src/images/headline-2.webp);">
+                    <div class="container text-center flex-column transition">
+                        <h1>Devastating Gaza hospital blast is shrouded in uncertainty</h1>
+                        <h5>By Rob Picheta</h5>
+                    </div>
+                </div>
+                <div class="carousel-item " style="background-image: url(./src/images/cs2.jpg);">
+                    <div class="container text-center flex-column transition">
+                        <h1>Counter Strike 2 Released, Replacing CSGO</h1>
+                        <h5>By Gabe Newell</h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--News List + Categories-->
+        <div id="newslist">
+            <div class="category-head">
+                <ul class="d-flex flex-row justify-content-evenly flex-wrap">
+                    <div class="category-title active" id="all">
+                        <li>All</li>
+                    </div>
+
+                    <div class="category-title" id="indonesian">
+                        <li>Indonesian</li>
+                    </div>
+
+                    <div class="category-title" id="world">
+                        <li>World</li>
+                    </div>
+
+                    <div class="category-title" id="entertainment">
+                        <li>Entertainment</li>
+                    </div>
+                    
+                    <div class="category-title" id="sports">
+                        <li>Sports</li>
+                    </div>
+                </ul>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col col-12 col-lg-6 d-flex flex-column gap-4">
+                        <div class="zone all titles pt-2 px-4 transition"> <!--Kiri Atas-->
+                            <h4>Indonesian News</h4>
+                            <hr class="text-light" style="width: 100%;">
+                            <div class="d-flex flex-row justify-content-between">
+                                <a href="#"><h6>Jadwal Lengkap Prediksi Datangnya Hujan di Jakarta</h6></a>
+                                <img src="./src/images/headline-1.jpg" alt="" class="icon i1">
+                            </div>
+                            <hr class="text-light" style="width: 100%;">
+                            <div class="d-flex flex-row justify-content-between">
+                                <a href="#"><h6>Indonesia ready to cooperate with Malaysia to fight against EUDR</h6></a>
+                                <img src="./src/images/headline-3.webp" alt="" class="icon i1">
+                            </div>
+                            <hr class="text-light" style="width: 100%;">
+                            <div class="d-flex flex-row justify-content-between">
+                                <a href="#"><h6>Indonesia struggles to evacuate citizens from Gaza Strip</h6></a>
+                                <img src="./src/images/headline-2.webp" alt="" class="icon i1">
+                            </div>
+
+                        </div> 
+                        <div class="zone all titles pt-2 pl-3 transition">
+                            <h4>Entertainment News</h4>
+                            <hr class="text-light" style="width: 420px;">
+                            <div class="d-flex flex-row justify-content-between">
+                                <a href="#"><h6>CS2 Released: No more CSGO, Skins wll be transferred to CS2!</h6></a>
+                                <img src="./src/images/cs2.jfif" alt="" class="icon i1">
+                            </div>
+                            <hr class="text-light" style="width: 100%;">
+                            <div class="d-flex flex-row justify-content-between">
+                                <a href="#"><h6>Valorant Controller Tips and Tricks, How To Win Everyday Like Me</h6></a>
+                                <img src="./src/images/valo.jfif" alt="" class="icon i1">
+                            </div>
+                            <hr class="text-light" style="width: 100%;">
+                            <div class="d-flex flex-row justify-content-between">
+                                <a href="#"><h6>Apex Legends Shield Swap Tips and Tricks, How To Play Like Noobs</h6></a>
+                                <img src="./src/images/apex.jfif" alt="" class="icon i1">
+                            </div>
+                        </div>
+                        <div class="zone all indonesian pt-2 px-4 hidden transition"> 
+                            <h4>Jadwal Lengkap Prediksi Datangnya Hujan di Jakarta</h4>
+                            <hr class="text-light" style="width: 420px;">
+                            <div class="d-flex flex-row justify-content-between">
+                                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatum quo impedit, eaque quasi, quisquam magnam cupiditate laboriosam, temporibus molestiae illo! Similique animi repellat nulla saepe possimus, ad odit vel.</h6>
+                                <img src="./src/images/headline-1.jpg" alt="" class="icon i1">
+                            </div>
+                        </div>
+                        <div class="zone all indonesian pt-2 px-4 hidden transition"> 
+                            <h4>Indonesia ready to cooperate with Malaysia to fight against EUDR</h4>
+                            <hr class="text-light" style="width: 420px;">
+                            <div class="d-flex flex-row justify-content-between">
+                                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatum quo impedit, eaque quasi, quisquam magnam cupiditate laboriosam, temporibus molestiae illo! Similique animi repellat nulla saepe possimus, ad odit vel.</h6>
+                                <img src="./src/images/headline-3.webp" alt="" class="icon i1">
+                            </div>
+                        </div>
+                        <div class="zone all entertainment pt-2 px-4 hidden transition"> 
+                            <h4>CS2 Released: No more CSGO, Skins wll be transferred to CS2!</h4>
+                            <hr class="text-light" style="width: 420px;">
+                            <div class="d-flex flex-row justify-content-between">
+                                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatum quo impedit, eaque quasi, quisquam magnam cupiditate laboriosam, temporibus molestiae illo! Similique animi repellat nulla saepe possimus, ad odit vel.</h6>
+                                <img src="./src/images/cs2.jfif" alt="" class="icon i1">
+                            </div>
+                        </div>
+                        <div class="zone all entertainment pt-2 px-4 hidden transition"> 
+                            <h4>Valorant Controller Tips and Tricks, How To Win Everyday Like Me</h4>
+                            <hr class="text-light" style="width: 420px;">
+                            <div class="d-flex flex-row justify-content-between">
+                                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatum quo impedit, eaque quasi, quisquam magnam cupiditate laboriosam, temporibus molestiae illo! Similique animi repellat nulla saepe possimus, ad odit vel.</h6>
+                                <img src="./src/images/valo.jfif" alt="" class="icon i1">
+                            </div>
+                        </div>
+                        <div class="zone all world pt-2 px-4 hidden transition"> 
+                            <h4>Can ASEAN and Japan buttress the international legal order?</h4>
+                            <hr class="text-light" style="width: 420px;">
+                            <div class="d-flex flex-row justify-content-between">
+                                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatum quo impedit, eaque quasi, quisquam magnam cupiditate laboriosam, temporibus molestiae illo! Similique animi repellat nulla saepe possimus, ad odit vel.</h6>
+                                <img src="./src/images/asean.jfif" alt="" class="icon i1">
+                            </div>
+                        </div>
+                        <div class="zone all world pt-2 px-4 hidden transition"> 
+                            <h4>2023/84 "Political Polarisation Marked Malaysia's Recent State Elections" by Pauline</h4>
+                            <hr class="text-light" style="width: 420px;">
+                            <div class="d-flex flex-row justify-content-between">
+                                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatum quo impedit, eaque quasi, quisquam magnam cupiditate laboriosam, temporibus molestiae illo! Similique animi repellat nulla saepe possimus, ad odit vel.</h6>
+                                <img src="./src/images/polarisation.jpg" alt="" class="icon i1">
+                            </div>
+                        </div>
+                        <div class="zone all sports pt-2 px-4 hidden transition"> 
+                            <h4>Kings at Warriors | NBA Preseason Full Game Highlights | October 18</h4>
+                            <hr class="text-light" style="width: 420px;">
+                            <div class="d-flex flex-row justify-content-between">
+                                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatum quo impedit, eaque quasi, quisquam magnam cupiditate laboriosam, temporibus molestiae illo! Similique animi repellat nulla saepe possimus, ad odit vel.</h6>
+                                <img src="./src/images/nba.webp" alt="" class="icon i1">
+                            </div>
+                        </div>
+                        <div class="zone all sports pt-2 px-4 hidden transition"> 
+                            <h4>The Tide Turns Twice in Title Tussle! | 2023</h4>
+                            <hr class="text-light" style="width: 420px;">
+                            <div class="d-flex flex-row justify-content-between">
+                                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatum quo impedit, eaque quasi, quisquam magnam cupiditate laboriosam, temporibus molestiae illo! Similique animi repellat nulla saepe possimus, ad odit vel.</h6>
+                                <img src="./src/images/indoGP.jpg" alt="" class="icon i1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-lg-6 d-flex flex-column gap-4">
+                        <div class="zone all titles pt-2 pl-3 transition transition">
+                            <h4>World News</h4>
+                            <hr class="text-light" style="width: 420px;">
+                            <div class="d-flex flex-row justify-content-between">
+                                <a href="#"><h6>Can ASEAN and Japan buttress the international legal order?</h6></a>
+                                <img src="./src/images/asean.jfif" alt="" class="icon i1">
+                            </div>
+                            <hr class="text-light" style="width: 100%;">
+                            <div class="d-flex flex-row justify-content-between">
+                                <a href="#"><h6>2023/84 "Political Polarisation Marked Malaysia's Recent State Elections" by Pauline</h6></a>
+                                <img src="./src/images/polarisation.jpg" alt="" class="icon i1">
+                            </div>
+                            <hr class="text-light" style="width: 100%;">
+                            <div class="d-flex flex-row justify-content-between">
+                                <a href="#"><h6>Jokowi and Xi Jinping Call for De-Escalation in Palestine-Israel Situation.</h6></a>
+                                <img src="./src/images/jokowi.jpeg" alt="" class="icon i1">
+                            </div>
+                        </div>
+                        <div class="zone all titles pt-2 pl-3 transition">
+                            <h4>Sports News</h4>
+                            <hr class="text-light" style="width: 420px;">
+                            <div class="d-flex flex-row justify-content-between">
+                                <a href="#"><h6>Kings at Warriors | NBA Preseason Full Game Highlights | October 18</h6></a>
+                                <img src="./src/images/nba.webp" alt="" class="icon i1">
+                            </div>
+                            <hr class="text-light" style="width: 100%;">
+                            <div class="d-flex flex-row justify-content-between">
+                                <a href="#"><h6>The Tide Turns Twice in Title Tussle! | 2023</h6></a>
+                                <img src="./src/images/indoGP.jpg" alt="" class="icon i1">
+                            </div>
+                            <hr class="text-light" style="width: 100%;">
+                            <div class="d-flex flex-row justify-content-between">
+                                <a href="#"><h6>How much do the riders know about Australia? | 2023 MotoGP</h6></a>
+                                <img src="./src/images/motogp.jpg" alt="" class="icon i1">
+                            </div>
+                        </div>
+                        <div class="zone all indonesian pt-2 px-4 hidden transition">
+                            <h4>Indonesia struggles to evacuate citizens from Gaza Strip</h4>
+                            <hr class="text-light" style="width: 420px;">
+                            <div class="d-flex flex-row justify-content-between">
+                                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatum quo impedit, eaque quasi, quisquam magnam cupiditate laboriosam, temporibus molestiae illo! Similique animi repellat nulla saepe possimus, ad odit vel.</h6>
+                                <img src="./src/images/headline-2.webp" alt="" class="icon i1">
+                            </div>
+                        </div>
+
+                        <div class="zone all entertainment pt-2 px-4 hidden transition"> 
+                            <h4>Apex Legends Shield Swap Tips and Tricks, How To Play Like Noobs</h4>
+                            <hr class="text-light" style="width: 420px;">
+                            <div class="d-flex flex-row justify-content-between">
+                                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatum quo impedit, eaque quasi, quisquam magnam cupiditate laboriosam, temporibus molestiae illo! Similique animi repellat nulla saepe possimus, ad odit vel.</h6>
+                                <img src="./src/images/apex.jfif" alt="" class="icon i1">
+                            </div>
+                        </div>
+
+                        <div class="zone all world pt-2 px-4 hidden transition"> 
+                            <h4>Jokowi and Xi Jinping Call for De-Escalation in Palestine-Israel Situation.</h4>
+                            <hr class="text-light" style="width: 420px;">
+                            <div class="d-flex flex-row justify-content-between">
+                                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatum quo impedit, eaque quasi, quisquam magnam cupiditate laboriosam, temporibus molestiae illo! Similique animi repellat nulla saepe possimus, ad odit vel.</h6>
+                                <img src="./src/images/jokowi.jpeg" alt="" class="icon i1">
+                            </div>
+                        </div>
+
+                        <div class="zone all sports pt-2 px-4 hidden transition"> 
+                            <h4>How much do the riders know about Australia? | 2023 MotoGP</h4>
+                            <hr class="text-light" style="width: 420px;">
+                            <div class="d-flex flex-row justify-content-between">
+                                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatum quo impedit, eaque quasi, quisquam magnam cupiditate laboriosam, temporibus molestiae illo! Similique animi repellat nulla saepe possimus, ad odit vel.</h6>
+                                <img src="./src/images/motogp.jpg" alt="" class="icon i1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="jobs">
+            <div class="row">
+                <div class="col col-12 col-lg-4 transition">
+                    <div class="zone z1">
+                        <img class="card-img-top" src="./src/images/lowong-1.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Relationship Manager Priority Banking</h5>
+                            <h6 class="card-text text-center">Be the best employee of the month</h6>
+                            <div class="d-flex flex-row justify-content-center align-items-center">
+                                <a href="#" class="btn-apply" style="text-decoration: none; text-decoration-color: white;">Apply Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-12 col-lg-4 transition">
+                    <div class="zone z1">
+                        <img class="card-img-top" src="./src/images/lowong-2.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Mcdonald's Employee / Cleaner</h5>
+                            <h6 class="card-text text-center">Be the best employee of the month</h6>
+                            <div class="d-flex flex-row justify-content-center align-items-center">
+                                <a href="#" class="btn-apply" style="text-decoration: none; text-decoration-color: white;">Apply Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-12 col-lg-4 transition">
+                    <div class="zone z1">
+                        <img class="card-img-top" src="./src/images/lowong-3.jfif" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Reporter for Dunder Mifflin Comp.</h5>
+                            <h6 class="card-text text-center">Be the best employee of the month</h6>
+                            <div class="d-flex flex-row justify-content-center align-items-center">
+                                <a href="#" class="btn-apply" style="text-decoration: none; text-decoration-color: white;">Apply Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="ads-events">
+            <div class="row">
+                <div class="col col-12 col-lg-12">
+                    <div class="zone transition" style="overflow: hidden;">
+                        <img src="./src/images/iklan-1.jpg" alt="" style="width: 100%; height: 100%;">
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col col-12 col-lg-12">
+                    <div class="zone transition" style="overflow: hidden;">
+                        <img src="./src/images/event-1.jpg" alt="" style="width: 100%; height: 100%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="form">
+            <form name="form1" class="d-flex flex-column justify-content-start" onsubmit="return validateForm()" method="post">
+                <div class="d-flex flex-column" style="height: fit-content;">
+                    <label for="Username">Username</label>
+                    <input class="px-2 py-2 rounded-3 bg-dark" type="text" name="Username" id="Username" placeholder="Enter your name">
+                </div>
+                
+                <div class="d-flex flex-column" style="height: fit-content;">
+                    <label for="Password">Suggestion</label>
+                    <input class="px-2 py-2 rounded-3 bg-dark" type="text" name="Suggestion" id="Suggestion" placeholder="Enter your suggestion">
+                </div>
+
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Remember suggestion</label>
+                </div>
+
+                <a href="#" class="mt-4" target="_blank">
+                    <button class="btn text-dark" type="submit" style="background-color: #1ED760;">Submit</button>
+                </a>
+            </form>
+        </div>
+    </div>
+    
+    
+    <script src='./src/bootstrap-5.0.2-dist/bootstrap.bundle.min.js'></script>
+    <script src='./src/script.js'></script>
+</body>
+</html>
